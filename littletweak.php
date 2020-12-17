@@ -16,4 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+/// 1. Remove jetpack upsell messages https://mattreport.com/disable-jetpack-upsell-ads/
+add_filter( 'jetpack_just_in_time_msgs', '__return_false' );
 ?>
